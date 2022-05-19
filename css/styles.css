@@ -167,7 +167,7 @@ img {
 }
 
 /* Студия псевдо-элемент */
-/* .nav.current {
+.nav.current {
   position: relative;
 }
 
@@ -181,7 +181,7 @@ img {
   height: 4px;
   border-radius: 2px;
   background-color: var(--accent-color);
-} */
+}
 
 /* auth-nav */
 .header-link {
