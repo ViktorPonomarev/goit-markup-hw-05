@@ -756,7 +756,7 @@ img {
 }
 
 /* Шторка для Товары и услуги */
-.features-thunb {
+/* .features-thunb {
   content: '';
   display: inline-block;
   position: absolute;
@@ -765,7 +765,7 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
-}
+} */
 
 /* Товары и услуги Иконки  и рамки */
 .icon {
