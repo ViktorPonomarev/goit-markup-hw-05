@@ -34,6 +34,7 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 /* Скрытые заголовки */
@@ -251,6 +252,50 @@ img {
   padding: 10px 32px;
 }
 
+/* Модальное окно */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+}
+
+.modal-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+  background: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.modal-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
 
 
 /* < !-- Преимущества --> */
@@ -345,28 +390,30 @@ img {
 }
 
 /* Псевдо-элемент для Примеры работ */
-/* .galerry-item {
+.galrrry-text {
   position: relative;
+
 }
 
-.galerry-item::before {
+.conteiner-desktop {
   position: absolute;
-  content: attr(data-sale);
+  bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  letter-spacing: 0.03em;
+  width: 370px;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.applications {
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 70px;
+  line-height: 1.14px;
+  letter-spacing: 0.03em;
   color: #FFFFFF;
-  background-color: rgba(47, 48, 58, 0.8);
-} */
+}
+
 
 /* Наша команда */
 .team-section {
@@ -706,6 +753,18 @@ img {
   line-height: 1.9;
 
   color: var(--main-text-color);
+}
+
+/* Шторка для Товары и услуги */
+.features-thunb {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
 }
 
 /* Товары и услуги Иконки  и рамки */

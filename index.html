@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Домашние задание #4</title>
+    <title>Домашние задание #5</title>
     <!-- Шрифты одной ссылкой -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -75,7 +75,18 @@
       <section class="hero-section">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="hero-btn">Заказать услугу</button>
+          
+          <button type="button" class="hero-btn" data-modal-open>Заказать услугу</button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal-wrapper">
+            <button class="modal-btn" data-modal-close>
+              <svg width="11" height="11">
+                <use href="./images/sprite.svg#icon-Vector"></use>
+              </svg>
+            </button>
+            <!-- <form class="modal-form"></form> -->
+            </div>
+          </div>
         </div>
       </section>
       <!-- Преимущества -->
@@ -138,22 +149,37 @@
           <h2 class="galerry-title">Чем мы занимаемся</h2>
           <ul class="galerry-img list">
             <li class="galerry-item">
+              <div class="galrrry-text">
               <img src="./images/img-1.jpg" alt="работа с компьютером" width="370" height="294" />
+              <div class="conteiner-desktop">
+                <p class="applications">ДEКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
+              </div>
+              </div>
             </li>
             <li class="galerry-item">
+              <div class="galrrry-text">
               <img
-                src="./images/img-2.jpg"
-                alt="работа с мобильним телефоном"
-                width="370"
-                height="294"
-              />
+                src="./images/img-2.jpg" alt="работа с мобильним телефоном" width="370" height="294"/> 
+                <div class="conteiner-desktop">
+                <p class="applications">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
+              </div>
+              </div>
             </li>
             <li class="galerry-item">
+              <div class="galrrry-text">
               <img src="./images/img-3.jpg" alt="работа с планшетом" width="370" height="294" />
+              <div class="conteiner-desktop">
+                <p class="applications">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
+              </div>
+              </div>
             </li>
           </ul>
         </div>
       </section>
+                
+                
+              
+             
 
       <!-- Наша команда -->
       <section class="team-section section">
@@ -553,6 +579,7 @@
       
     </div>
 </footer>
+<script src="./js/modal.js"></script>
 </body>
 </html>
       
