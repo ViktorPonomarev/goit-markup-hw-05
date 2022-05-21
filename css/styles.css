@@ -168,6 +168,8 @@ img {
 .nav:hover,
 .nav:focus {
   color: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Студия псевдо-элемент */
@@ -185,6 +187,7 @@ img {
   height: 4px;
   border-radius: 2px;
   background-color: var(--accent-color);
+
 }
 
 /* auth-nav */
@@ -198,6 +201,8 @@ img {
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link:hover,
@@ -251,8 +256,16 @@ img {
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
   color: var(--secondary-text-color);
-
   padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  transition: background-color, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  background-color: var(--accent-color);
 }
 
 /* Модальное окно */
@@ -264,6 +277,7 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity var(--fast-anim), visibility var(--fast-anim);
 }
 
 .backdrop.is-hidden {
@@ -282,7 +296,9 @@ img {
   height: 581px;
   background: #FFFFFF;
   border-radius: 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
 }
 
 .modal-btn {
@@ -299,6 +315,7 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
+
 }
 
 
@@ -353,11 +370,10 @@ img {
   border-radius: 4px;
   background-color: var(--team-bacgrount-color);
   margin-bottom: 30px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .benefits-icon {
-  fill: #F5F4FA;
-} */
 
 .benefits-link:hover {
   border-color: var(--accent-color);
@@ -493,6 +509,8 @@ img {
   height: 44px;
   background-color: var(--secondary-text-color);
   border-radius: 50%;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-link:hover,
@@ -538,10 +556,14 @@ img {
   height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-icon {
   fill: #AFB1B8;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover,
@@ -647,6 +669,8 @@ img {
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon {
@@ -682,7 +706,10 @@ img {
   letter-spacing: 0.03em;
   border-radius: 4px;
   padding: 6px 22px;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  transition: background-color, 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .control {
   display: flex;
@@ -765,18 +792,6 @@ img {
   overflow: hidden;
 }
 
-/* .features-overlay::before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(33, 150, 243, 0.9);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transform: translateY(100%);
-} */
 
 
 
