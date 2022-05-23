@@ -12,6 +12,7 @@
   --secondary-bacground-color: #2F303A;
   --galerry-bacground-color: #E5E5E5;
   --team-bacgrount-color: #F5F4FA;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -153,6 +154,9 @@ img {
   color: var(--title-text-color);
   padding-top: 32px;
   padding-bottom: 32px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .auth-icon {
@@ -168,8 +172,7 @@ img {
 .nav:hover,
 .nav:focus {
   color: var(--accent-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 /* Студия псевдо-элемент */
@@ -201,6 +204,7 @@ img {
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -257,6 +261,7 @@ img {
   background-color: var(--accent-color);
   color: var(--secondary-text-color);
   padding: 10px 32px;
+  transition-property: color;
   box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
   transition: background-color, 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -276,6 +281,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
+  transition-property: color;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 500ms, visibility 500ms;
 }
@@ -315,18 +321,16 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
+  transition-property: color;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
-.modal-btn:hover,
-.modal-btn:focus {
-  background-color: var(--accent-color);
 
-}
 
 .modal-icon {
   transform: rotate(0deg);
+  transition-property: color;
   color: var(--secondary-text-color);
   transition-property: fill, transform;
   transition-duration: 250ms;
@@ -334,11 +338,17 @@ img {
   transition-delay: 0;
 }
 
-.modal-icon:hover,
-.modal-icon:focus {
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: var(--accent-color)
+}
+
+.modal-btn:hover .modal-icon,
+.modal-btn:focus .modal-icon {
   fill: var(--secondary-text-color);
   transform: rotate(180deg);
 }
+
 
 /* < !-- Преимущества --> */
 .benefits-list {
@@ -442,16 +452,15 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 370px;
+  width: 100%;
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
 }
 
 .applications {
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14px;
-  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: #FFFFFF;
 }
 
@@ -577,6 +586,7 @@ img {
   height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -641,6 +651,13 @@ img {
   font-size: 14px;
   line-height: 1.71;
   color: var(--secondary-text-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-text:hover,
+.footer-text:focus {
+  color: var(--accent-color);
 }
 
 .footer-link {
@@ -648,6 +665,13 @@ img {
   font-size: 14px;
   line-height: 1.71;
   color: var(--main-text-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-color);
 }
 
 /* Иконки футер */
@@ -727,8 +751,8 @@ img {
   letter-spacing: 0.03em;
   border-radius: 4px;
   padding: 6px 22px;
-  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
-  transition: background-color, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* box-shadow: 0px 4px 4px rgb(0 0 0 / 15%); */
+  transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
 }
 
 
