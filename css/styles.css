@@ -443,10 +443,9 @@ img {
 /* Псевдо-элемент для Примеры работ */
 .galrrry-text {
   position: relative;
-
 }
 
-.conteiner-desktop {
+.applications {
   position: absolute;
   bottom: 0;
   display: flex;
@@ -455,9 +454,6 @@ img {
   width: 100%;
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
-}
-
-.applications {
   font-weight: 700;
   line-height: 1.14px;
   text-transform: uppercase;
@@ -537,8 +533,8 @@ img {
   justify-content: center;
   width: 44px;
   height: 44px;
-  background-color: var(--secondary-text-color);
   border-radius: 50%;
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -546,11 +542,13 @@ img {
 .team-link:hover,
 .team-link:focus {
   background-color: var(--accent-color);
-  fill: var(--main-bacground-color);
+
 }
 
 .team-icon {
   fill: #AFB1B8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  ;
 }
 
 .team-link:hover .team-icon,
@@ -586,7 +584,7 @@ img {
   height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
-  transition-property: color;
+  transition-property: backgound-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
