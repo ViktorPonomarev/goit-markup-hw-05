@@ -662,7 +662,7 @@ img {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
-  color: var(--main-text-color);
+  color: rgba(255, 255, 255, 0.6);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
